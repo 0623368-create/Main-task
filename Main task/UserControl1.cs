@@ -27,10 +27,7 @@ namespace Main_task
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void coaddproducts_Click(object sender, EventArgs e)
         {
@@ -46,5 +43,6 @@ namespace Main_task
         {
 
         }
+
     }
 }

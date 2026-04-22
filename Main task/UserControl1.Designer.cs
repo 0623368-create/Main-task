@@ -28,23 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cointerface = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.coaddproducts = new System.Windows.Forms.Button();
-            this.coeditproducts = new System.Windows.Forms.Button();
+            this.coID = new System.Windows.Forms.Label();
+            this.coname = new System.Windows.Forms.Label();
+            this.coprice = new System.Windows.Forms.Label();
+            this.copricetb = new System.Windows.Forms.TextBox();
+            this.codeleteproductstb = new System.Windows.Forms.TextBox();
+            this.codeleteproducts = new System.Windows.Forms.Button();
+            this.cobrand = new System.Windows.Forms.Label();
             this.cocheckout = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.coeditproducts = new System.Windows.Forms.Button();
+            this.coaddproducts = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.conametb = new System.Windows.Forms.TextBox();
+            this.coIDtb = new System.Windows.Forms.TextBox();
+            this.cobrandtb = new System.Windows.Forms.TextBox();
             this.cointerface.SuspendLayout();
             this.SuspendLayout();
             // 
             // cointerface
             // 
             this.cointerface.BackColor = System.Drawing.Color.HotPink;
-            this.cointerface.Controls.Add(this.button4);
+            this.cointerface.Controls.Add(this.cobrandtb);
+            this.cointerface.Controls.Add(this.coIDtb);
+            this.cointerface.Controls.Add(this.conametb);
+            this.cointerface.Controls.Add(this.coID);
+            this.cointerface.Controls.Add(this.coname);
+            this.cointerface.Controls.Add(this.coprice);
+            this.cointerface.Controls.Add(this.copricetb);
+            this.cointerface.Controls.Add(this.codeleteproductstb);
+            this.cointerface.Controls.Add(this.codeleteproducts);
+            this.cointerface.Controls.Add(this.cobrand);
             this.cointerface.Controls.Add(this.cocheckout);
             this.cointerface.Controls.Add(this.coeditproducts);
             this.cointerface.Controls.Add(this.coaddproducts);
-            this.cointerface.Location = new System.Drawing.Point(0, 0);
+            this.cointerface.Location = new System.Drawing.Point(40, 55);
             this.cointerface.Name = "cointerface";
             this.cointerface.Size = new System.Drawing.Size(279, 429);
             this.cointerface.TabIndex = 0;
@@ -52,25 +74,64 @@
             this.cointerface.Text = "interface";
             this.cointerface.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // coaddproducts
+            // coID
             // 
-            this.coaddproducts.Location = new System.Drawing.Point(0, 339);
-            this.coaddproducts.Name = "coaddproducts";
-            this.coaddproducts.Size = new System.Drawing.Size(86, 27);
-            this.coaddproducts.TabIndex = 0;
-            this.coaddproducts.Text = "add products";
-            this.coaddproducts.UseVisualStyleBackColor = true;
-            this.coaddproducts.Click += new System.EventHandler(this.coaddproducts_Click);
+            this.coID.AutoSize = true;
+            this.coID.Location = new System.Drawing.Point(6, 103);
+            this.coID.Name = "coID";
+            this.coID.Size = new System.Drawing.Size(18, 13);
+            this.coID.TabIndex = 8;
+            this.coID.Text = "ID";
             // 
-            // coeditproducts
+            // coname
             // 
-            this.coeditproducts.Location = new System.Drawing.Point(105, 339);
-            this.coeditproducts.Name = "coeditproducts";
-            this.coeditproducts.Size = new System.Drawing.Size(84, 27);
-            this.coeditproducts.TabIndex = 1;
-            this.coeditproducts.Text = "edit products";
-            this.coeditproducts.UseVisualStyleBackColor = true;
-            this.coeditproducts.Click += new System.EventHandler(this.coeditproducts_Click);
+            this.coname.AutoSize = true;
+            this.coname.Location = new System.Drawing.Point(6, 139);
+            this.coname.Name = "coname";
+            this.coname.Size = new System.Drawing.Size(33, 13);
+            this.coname.TabIndex = 7;
+            this.coname.Text = "name";
+            // 
+            // coprice
+            // 
+            this.coprice.AutoSize = true;
+            this.coprice.Location = new System.Drawing.Point(6, 180);
+            this.coprice.Name = "coprice";
+            this.coprice.Size = new System.Drawing.Size(30, 13);
+            this.coprice.TabIndex = 6;
+            this.coprice.Text = "price";
+            // 
+            // copricetb
+            // 
+            this.copricetb.Location = new System.Drawing.Point(65, 180);
+            this.copricetb.Name = "copricetb";
+            this.copricetb.Size = new System.Drawing.Size(100, 20);
+            this.copricetb.TabIndex = 5;
+            // 
+            // codeleteproductstb
+            // 
+            this.codeleteproductstb.Location = new System.Drawing.Point(132, 387);
+            this.codeleteproductstb.Name = "codeleteproductstb";
+            this.codeleteproductstb.Size = new System.Drawing.Size(100, 20);
+            this.codeleteproductstb.TabIndex = 4;
+            // 
+            // codeleteproducts
+            // 
+            this.codeleteproducts.Location = new System.Drawing.Point(0, 383);
+            this.codeleteproducts.Name = "codeleteproducts";
+            this.codeleteproducts.Size = new System.Drawing.Size(108, 27);
+            this.codeleteproducts.TabIndex = 3;
+            this.codeleteproducts.Text = "delete products";
+            this.codeleteproducts.UseVisualStyleBackColor = true;
+            // 
+            // cobrand
+            // 
+            this.cobrand.AutoSize = true;
+            this.cobrand.Location = new System.Drawing.Point(6, 67);
+            this.cobrand.Name = "cobrand";
+            this.cobrand.Size = new System.Drawing.Size(34, 13);
+            this.cobrand.TabIndex = 4;
+            this.cobrand.Text = "brand";
             // 
             // cocheckout
             // 
@@ -82,15 +143,61 @@
             this.cocheckout.UseVisualStyleBackColor = true;
             this.cocheckout.Click += new System.EventHandler(this.cocheckout_Click);
             // 
-            // button4
+            // coeditproducts
             // 
-            this.button4.Location = new System.Drawing.Point(0, 383);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 27);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.coeditproducts.Location = new System.Drawing.Point(105, 339);
+            this.coeditproducts.Name = "coeditproducts";
+            this.coeditproducts.Size = new System.Drawing.Size(84, 27);
+            this.coeditproducts.TabIndex = 1;
+            this.coeditproducts.Text = "edit products";
+            this.coeditproducts.UseVisualStyleBackColor = true;
+            this.coeditproducts.Click += new System.EventHandler(this.coeditproducts_Click);
+            // 
+            // coaddproducts
+            // 
+            this.coaddproducts.Location = new System.Drawing.Point(0, 339);
+            this.coaddproducts.Name = "coaddproducts";
+            this.coaddproducts.Size = new System.Drawing.Size(86, 27);
+            this.coaddproducts.TabIndex = 0;
+            this.coaddproducts.Text = "add products";
+            this.coaddproducts.UseVisualStyleBackColor = true;
+            this.coaddproducts.Click += new System.EventHandler(this.coaddproducts_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
+            // 
+            // conametb
+            // 
+            this.conametb.Location = new System.Drawing.Point(65, 136);
+            this.conametb.Name = "conametb";
+            this.conametb.Size = new System.Drawing.Size(100, 20);
+            this.conametb.TabIndex = 9;
+            // 
+            // coIDtb
+            // 
+            this.coIDtb.Location = new System.Drawing.Point(65, 96);
+            this.coIDtb.Name = "coIDtb";
+            this.coIDtb.Size = new System.Drawing.Size(100, 20);
+            this.coIDtb.TabIndex = 10;
+            // 
+            // cobrandtb
+            // 
+            this.cobrandtb.Location = new System.Drawing.Point(65, 60);
+            this.cobrandtb.Name = "cobrandtb";
+            this.cobrandtb.Size = new System.Drawing.Size(100, 20);
+            this.cobrandtb.TabIndex = 11;
             // 
             // UserControl1
             // 
@@ -101,6 +208,7 @@
             this.Size = new System.Drawing.Size(826, 558);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.cointerface.ResumeLayout(false);
+            this.cointerface.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -109,9 +217,21 @@
 
         private System.Windows.Forms.GroupBox cointerface;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button codeleteproducts;
         private System.Windows.Forms.Button cocheckout;
         private System.Windows.Forms.Button coeditproducts;
         private System.Windows.Forms.Button coaddproducts;
+        private System.Windows.Forms.TextBox copricetb;
+        private System.Windows.Forms.TextBox codeleteproductstb;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
+        private System.Windows.Forms.Label cobrand;
+        private System.Windows.Forms.Label coID;
+        private System.Windows.Forms.Label coname;
+        private System.Windows.Forms.Label coprice;
+        private System.Windows.Forms.TextBox cobrandtb;
+        private System.Windows.Forms.TextBox coIDtb;
+        private System.Windows.Forms.TextBox conametb;
     }
 }
