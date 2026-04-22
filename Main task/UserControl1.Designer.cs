@@ -64,7 +64,7 @@
             // 
             // coeditproducts
             // 
-            this.coeditproducts.Location = new System.Drawing.Point(108, 339);
+            this.coeditproducts.Location = new System.Drawing.Point(105, 339);
             this.coeditproducts.Name = "coeditproducts";
             this.coeditproducts.Size = new System.Drawing.Size(84, 27);
             this.coeditproducts.TabIndex = 1;
