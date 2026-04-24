@@ -32,6 +32,7 @@
             this.comenu = new System.Windows.Forms.Button();
             this.coaboutus = new System.Windows.Forms.Button();
             this.cocheckout = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,13 +74,14 @@
             this.cocheckout.TabIndex = 2;
             this.cocheckout.Text = "checkout";
             this.cocheckout.UseVisualStyleBackColor = true;
+            this.cocheckout.Click += new System.EventHandler(this.cocheckout_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1023, 449);
+            this.ClientSize = new System.Drawing.Size(1047, 449);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -94,6 +96,7 @@
         private System.Windows.Forms.Button comenu;
         private System.Windows.Forms.Button coaboutus;
         private System.Windows.Forms.Button cocheckout;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

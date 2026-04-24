@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Main_task
 {
-    public partial class Form1 : Form
+    public partial class aboutus : UserControl
     {
-        private void comenu_Click(object sender, EventArgs e)
+        public aboutus()
         {
-            
-        }
-
-        private void cocheckout_Click(object sender, EventArgs e)
-        {
-
-//the the umm hte uhh user checkuout thing appears
-
-
-
-
-
+            InitializeComponent();
         }
     }
 }

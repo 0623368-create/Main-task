@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cointerface = new System.Windows.Forms.GroupBox();
+            this.cobrandtb = new System.Windows.Forms.TextBox();
+            this.coIDtb = new System.Windows.Forms.TextBox();
+            this.conametb = new System.Windows.Forms.TextBox();
             this.coID = new System.Windows.Forms.Label();
             this.coname = new System.Windows.Forms.Label();
             this.coprice = new System.Windows.Forms.Label();
@@ -44,10 +47,15 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.conametb = new System.Windows.Forms.TextBox();
-            this.coIDtb = new System.Windows.Forms.TextBox();
-            this.cobrandtb = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cobrand0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coname0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coprice0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coID0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.cointerface.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // cointerface
@@ -73,6 +81,27 @@
             this.cointerface.TabStop = false;
             this.cointerface.Text = "interface";
             this.cointerface.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cobrandtb
+            // 
+            this.cobrandtb.Location = new System.Drawing.Point(65, 60);
+            this.cobrandtb.Name = "cobrandtb";
+            this.cobrandtb.Size = new System.Drawing.Size(100, 20);
+            this.cobrandtb.TabIndex = 11;
+            // 
+            // coIDtb
+            // 
+            this.coIDtb.Location = new System.Drawing.Point(65, 96);
+            this.coIDtb.Name = "coIDtb";
+            this.coIDtb.Size = new System.Drawing.Size(100, 20);
+            this.coIDtb.TabIndex = 10;
+            // 
+            // conametb
+            // 
+            this.conametb.Location = new System.Drawing.Point(65, 136);
+            this.conametb.Name = "conametb";
+            this.conametb.Size = new System.Drawing.Size(100, 20);
+            this.conametb.TabIndex = 9;
             // 
             // coID
             // 
@@ -151,7 +180,6 @@
             this.coeditproducts.TabIndex = 1;
             this.coeditproducts.Text = "edit products";
             this.coeditproducts.UseVisualStyleBackColor = true;
-            this.coeditproducts.Click += new System.EventHandler(this.coeditproducts_Click);
             // 
             // coaddproducts
             // 
@@ -178,37 +206,68 @@
             this.contextMenuStrip3.Name = "contextMenuStrip3";
             this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
             // 
-            // conametb
+            // dataGridView1
             // 
-            this.conametb.Location = new System.Drawing.Point(65, 136);
-            this.conametb.Name = "conametb";
-            this.conametb.Size = new System.Drawing.Size(100, 20);
-            this.conametb.TabIndex = 9;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cobrand0,
+            this.coname0,
+            this.coprice0,
+            this.coID0});
+            this.dataGridView1.Location = new System.Drawing.Point(345, 55);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(446, 429);
+            this.dataGridView1.TabIndex = 3;
             // 
-            // coIDtb
+            // cobrand0
             // 
-            this.coIDtb.Location = new System.Drawing.Point(65, 96);
-            this.coIDtb.Name = "coIDtb";
-            this.coIDtb.Size = new System.Drawing.Size(100, 20);
-            this.coIDtb.TabIndex = 10;
+            this.cobrand0.HeaderText = "Brand";
+            this.cobrand0.Name = "cobrand0";
+            this.cobrand0.ReadOnly = true;
             // 
-            // cobrandtb
+            // coname0
             // 
-            this.cobrandtb.Location = new System.Drawing.Point(65, 60);
-            this.cobrandtb.Name = "cobrandtb";
-            this.cobrandtb.Size = new System.Drawing.Size(100, 20);
-            this.cobrandtb.TabIndex = 11;
+            this.coname0.HeaderText = "Name";
+            this.coname0.Name = "coname0";
+            this.coname0.ReadOnly = true;
+            // 
+            // coprice0
+            // 
+            this.coprice0.HeaderText = "Price";
+            this.coprice0.Name = "coprice0";
+            this.coprice0.ReadOnly = true;
+            // 
+            // coID0
+            // 
+            this.coID0.HeaderText = "ID";
+            this.coID0.Name = "coID0";
+            this.coID0.ReadOnly = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(783, 271);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(8, 8);
+            this.dataGridView2.TabIndex = 4;
             // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cointerface);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(826, 558);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.cointerface.ResumeLayout(false);
             this.cointerface.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -233,5 +292,11 @@
         private System.Windows.Forms.TextBox cobrandtb;
         private System.Windows.Forms.TextBox coIDtb;
         private System.Windows.Forms.TextBox conametb;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrand0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coname0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coprice0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coID0;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
