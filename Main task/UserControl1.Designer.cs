@@ -74,9 +74,9 @@
             this.cointerface.Controls.Add(this.cocheckout);
             this.cointerface.Controls.Add(this.coeditproducts);
             this.cointerface.Controls.Add(this.coaddproducts);
-            this.cointerface.Location = new System.Drawing.Point(3, 12);
+            this.cointerface.Location = new System.Drawing.Point(3, 19);
             this.cointerface.Name = "cointerface";
-            this.cointerface.Size = new System.Drawing.Size(279, 424);
+            this.cointerface.Size = new System.Drawing.Size(279, 417);
             this.cointerface.TabIndex = 0;
             this.cointerface.TabStop = false;
             this.cointerface.Text = "interface";
@@ -215,10 +215,10 @@
             this.coname0,
             this.coprice0,
             this.coID0});
-            this.dataGridView1.Location = new System.Drawing.Point(308, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(308, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(446, 424);
+            this.dataGridView1.Size = new System.Drawing.Size(446, 417);
             this.dataGridView1.TabIndex = 3;
             // 
             // cobrand0
@@ -248,9 +248,9 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(746, 228);
+            this.dataGridView2.Location = new System.Drawing.Point(746, 221);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(8, 3);
+            this.dataGridView2.Size = new System.Drawing.Size(8, 10);
             this.dataGridView2.TabIndex = 4;
             // 
             // UserControl1
