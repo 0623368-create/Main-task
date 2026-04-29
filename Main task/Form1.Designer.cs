@@ -33,6 +33,7 @@
             this.coaboutus = new System.Windows.Forms.Button();
             this.cocheckout = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.pnlContent = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,12 +77,21 @@
             this.cocheckout.UseVisualStyleBackColor = true;
             this.cocheckout.Click += new System.EventHandler(this.cocheckout_Click);
             // 
+            // pnlContent
+            // 
+            this.pnlContent.Location = new System.Drawing.Point(166, -1);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(883, 452);
+            this.pnlContent.TabIndex = 1;
+            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1047, 449);
+            this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -97,6 +107,7 @@
         private System.Windows.Forms.Button coaboutus;
         private System.Windows.Forms.Button cocheckout;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel pnlContent;
     }
 }
 

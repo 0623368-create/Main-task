@@ -52,6 +52,13 @@
     <Compile Include="aboutus.Designer.cs">
       <DependentUpon>aboutus.cs</DependentUpon>
     </Compile>
+    <Compile Include="menuUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="menuUS.Designer.cs">
+      <DependentUpon>menuUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuUS.resx">
+      <DependentUpon>menuUS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

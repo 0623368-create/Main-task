@@ -18,20 +18,7 @@ namespace Main_task
         }
 
 
-        private void cocheckout_Click(object sender, EventArgs e)
-        {
-            if (!Validate) ; //Finish this later lol
 
-            //string or int or decimal all the info
-
-            //add the product to the table with all the info
-
-            //refresh the grid
-
-            //clear fields
-
-
-        }
 
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -45,15 +32,25 @@ namespace Main_task
         }
 
   
-        private void coaddproducts_Click(object sender, EventArgs e)
-        {
+      private void coaddproducts_Click(object sender, EventArgs e)
+       {
+          //  if (!ValidateInputs()) return;
+
+          //  int proID = coIDtb.count + 1000;
+          //  string proname = conametb.Text;
+          //  string probrand = cobrandtb.Text;
+          //  decimal proprice = decimal.Parse(copricetb);
+
+          //  product newProduct = new product(proID, proname, probrand, proprice);
+           // _inventoryList.Add(newProduct);
+
 
         }
 
-        private void cocheckout_Click(object sender, EventArgs e)
-        {
+   // private void cocheckout_Click(object sender, EventArgs e)
+      //  {
 
         }
 
     }
-}
+//}
