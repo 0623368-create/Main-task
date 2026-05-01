@@ -54,7 +54,7 @@
             this.comenu.Name = "comenu";
             this.comenu.Size = new System.Drawing.Size(75, 23);
             this.comenu.TabIndex = 0;
-            this.comenu.Text = "menu";
+            this.comenu.Text = "home";
             this.comenu.UseVisualStyleBackColor = true;
             this.comenu.Click += new System.EventHandler(this.comenu_Click);
             // 
@@ -95,6 +95,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

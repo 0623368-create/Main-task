@@ -17,7 +17,21 @@ namespace Main_task
             InitializeComponent();
         }
 
+        public class product
+        {
+            public string proname;
+            public string probrand;
+            public decimal proprice;
+            public int proID;
 
+            public product(int proID, string proname, string probrand, decimal proprice)
+            {
+                this.proID = proID;
+                this.proname = proname;
+                this.probrand = probrand;
+                this.proprice = proprice;
+            }
+        }
 
 
 
@@ -31,26 +45,37 @@ namespace Main_task
 
         }
 
-  
-      private void coaddproducts_Click(object sender, EventArgs e)
-       {
-          //  if (!ValidateInputs()) return;
 
-          //  int proID = coIDtb.count + 1000;
-          //  string proname = conametb.Text;
-          //  string probrand = cobrandtb.Text;
-          //  decimal proprice = decimal.Parse(copricetb);
+        private void coaddproducts_Click(object sender, EventArgs e)
+        {
 
-          //  product newProduct = new product(proID, proname, probrand, proprice);
-           // _inventoryList.Add(newProduct);
+            int.TryParse(cobrandtb.Text, out int proID);
+
+        //    if false
+          //      {
+
+       //         }
+
+            string proname = conametb.Text;
+            string probrand = cobrandtb.Text;
+            decimal.TryParse(copricetb.Text, out decimal proprice);
+
+        //    if false
+      //          {
+
+       //         }
+
+
+            product newProduct = new product(proID, proname, probrand, proprice);
+            dataGridView1.Add(newProduct);
 
 
         }
 
-   // private void cocheckout_Click(object sender, EventArgs e)
-      //  {
+        private void cocheckout_Click(object sender, EventArgs e)
+        {
 
         }
 
     }
-//}
+}

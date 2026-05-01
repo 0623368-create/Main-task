@@ -49,6 +49,11 @@ namespace Main_task
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ShowScreen(new menuUS());
+        }
+
         //the the umm hte uhh user checkuout thing appears
 
 
