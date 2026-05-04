@@ -24,10 +24,10 @@ namespace Main_task
 
         }
 
-
         private void cocheckout_Click(object sender, EventArgs e)
         {
             ShowScreen(new UserControl1());
+
         }
 
         // This can be reused for showing any UserControl
@@ -48,10 +48,17 @@ namespace Main_task
         {
 
         }
+        
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
             ShowScreen(new menuUS());
+        }
+
+        private void coaboutus_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new aboutususercontrol());
         }
 
         //the the umm hte uhh user checkuout thing appears

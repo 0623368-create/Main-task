@@ -17,29 +17,29 @@ namespace Main_task
             InitializeComponent();
         }
 
-        List<String> donut = new List<string>();
+     //   List<String> donut = new List<string>();
 
-                    using (StreamReader sr = new StreamReader("H:\Programming\clone omori\Assignment_3\Properties\download.jpg"))
+    //                using (StreamReader sr = new StreamReader("H:\Programming\clone omori\Assignment_3\Properties\download.jpg"))
+    
+      //      {
 
-            {
-
-                string line;
+    //            string line;
 
 
 
-                while ((line = sr.ReadLine()) != null)
+      //          while ((line = sr.ReadLine()) != null)
+//
+     //           {
 
-                {
+      //              emoji.Add(line);
 
-                    emoji.Add(line);
-
-                }
+         //       }
 
 
 
                 
 
-            }
+         //   }
 
 
         private void textBox1_TextChanged(object sender, EventArgs e)

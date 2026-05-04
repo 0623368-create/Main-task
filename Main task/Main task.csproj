@@ -52,6 +52,24 @@
     <Compile Include="aboutus.Designer.cs">
       <DependentUpon>aboutus.cs</DependentUpon>
     </Compile>
+    <Compile Include="aboutususercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="aboutususercontrol.Designer.cs">
+      <DependentUpon>aboutususercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="checkout.Designer.cs">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkoutomori.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="checkoutomori.Designer.cs">
+      <DependentUpon>checkoutomori.cs</DependentUpon>
+    </Compile>
     <Compile Include="menuUS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,6 +93,15 @@
     </Compile>
     <EmbeddedResource Include="aboutus.resx">
       <DependentUpon>aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutususercontrol.resx">
+      <DependentUpon>aboutususercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkoutomori.resx">
+      <DependentUpon>checkoutomori.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

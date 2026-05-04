@@ -44,7 +44,10 @@ namespace Main_task
         {
 
         }
-
+        private void cocheckout_Click(object sender, EventArgs e)
+        {
+            
+        }
 
         private void coaddproducts_Click(object sender, EventArgs e)
         {
@@ -67,15 +70,11 @@ namespace Main_task
 
 
             product newProduct = new product(proID, proname, probrand, proprice);
-            dataGridView1.Add(newProduct);
+          //  dataGridView1.Add(newProduct);
 
 
         }
 
-        private void cocheckout_Click(object sender, EventArgs e)
-        {
-
-        }
 
     }
 }

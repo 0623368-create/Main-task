@@ -34,7 +34,9 @@
             this.cocheckout = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.aboutus1 = new Main_task.aboutus();
             this.panel1.SuspendLayout();
+            this.pnlContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +68,7 @@
             this.coaboutus.TabIndex = 1;
             this.coaboutus.Text = "about us";
             this.coaboutus.UseVisualStyleBackColor = true;
+            this.coaboutus.Click += new System.EventHandler(this.coaboutus_Click);
             // 
             // cocheckout
             // 
@@ -79,11 +82,19 @@
             // 
             // pnlContent
             // 
+            this.pnlContent.Controls.Add(this.aboutus1);
             this.pnlContent.Location = new System.Drawing.Point(166, -1);
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(883, 452);
             this.pnlContent.TabIndex = 1;
             this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
+            // 
+            // aboutus1
+            // 
+            this.aboutus1.Location = new System.Drawing.Point(0, -26);
+            this.aboutus1.Name = "aboutus1";
+            this.aboutus1.Size = new System.Drawing.Size(858, 612);
+            this.aboutus1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -97,6 +108,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.pnlContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -109,6 +121,7 @@
         private System.Windows.Forms.Button cocheckout;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel pnlContent;
+        private aboutus aboutus1;
     }
 }
 
