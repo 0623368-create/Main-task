@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cointerface = new System.Windows.Forms.GroupBox();
+            this.cocardnumberlabel = new System.Windows.Forms.Label();
+            this.coCVVlabel = new System.Windows.Forms.Label();
             this.coexpirydatelabel = new System.Windows.Forms.Label();
             this.coCVVtb = new System.Windows.Forms.TextBox();
             this.coexpirydatetb = new System.Windows.Forms.TextBox();
@@ -56,12 +58,10 @@
             this.coname0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coprice0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coID0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.coCVVlabel = new System.Windows.Forms.Label();
-            this.cocardnumberlabel = new System.Windows.Forms.Label();
+            this.coquantity0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cototal0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cointerface.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // cointerface
@@ -93,6 +93,24 @@
             this.cointerface.TabStop = false;
             this.cointerface.Text = "interface";
             this.cointerface.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cocardnumberlabel
+            // 
+            this.cocardnumberlabel.AutoSize = true;
+            this.cocardnumberlabel.Location = new System.Drawing.Point(207, 394);
+            this.cocardnumberlabel.Name = "cocardnumberlabel";
+            this.cocardnumberlabel.Size = new System.Drawing.Size(66, 13);
+            this.cocardnumberlabel.TabIndex = 17;
+            this.cocardnumberlabel.Text = "card number";
+            // 
+            // coCVVlabel
+            // 
+            this.coCVVlabel.AutoSize = true;
+            this.coCVVlabel.Location = new System.Drawing.Point(115, 367);
+            this.coCVVlabel.Name = "coCVVlabel";
+            this.coCVVlabel.Size = new System.Drawing.Size(52, 13);
+            this.coCVVlabel.TabIndex = 16;
+            this.coCVVlabel.Text = "card CVV";
             // 
             // coexpirydatelabel
             // 
@@ -256,11 +274,13 @@
             this.cobrand0,
             this.coname0,
             this.coprice0,
-            this.coID0});
-            this.dataGridView1.Location = new System.Drawing.Point(308, 19);
+            this.coID0,
+            this.coquantity0,
+            this.cototal0});
+            this.dataGridView1.Location = new System.Drawing.Point(301, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(446, 417);
+            this.dataGridView1.Size = new System.Drawing.Size(629, 417);
             this.dataGridView1.TabIndex = 3;
             // 
             // cobrand0
@@ -287,46 +307,30 @@
             this.coID0.Name = "coID0";
             this.coID0.ReadOnly = true;
             // 
-            // dataGridView2
+            // coquantity0
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(746, 221);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(8, 10);
-            this.dataGridView2.TabIndex = 4;
+            this.coquantity0.HeaderText = "Quantity";
+            this.coquantity0.Name = "coquantity0";
+            this.coquantity0.ReadOnly = true;
             // 
-            // coCVVlabel
+            // cototal0
             // 
-            this.coCVVlabel.AutoSize = true;
-            this.coCVVlabel.Location = new System.Drawing.Point(115, 367);
-            this.coCVVlabel.Name = "coCVVlabel";
-            this.coCVVlabel.Size = new System.Drawing.Size(52, 13);
-            this.coCVVlabel.TabIndex = 16;
-            this.coCVVlabel.Text = "card CVV";
-            // 
-            // cocardnumberlabel
-            // 
-            this.cocardnumberlabel.AutoSize = true;
-            this.cocardnumberlabel.Location = new System.Drawing.Point(207, 394);
-            this.cocardnumberlabel.Name = "cocardnumberlabel";
-            this.cocardnumberlabel.Size = new System.Drawing.Size(66, 13);
-            this.cocardnumberlabel.TabIndex = 17;
-            this.cocardnumberlabel.Text = "card number";
+            this.cototal0.HeaderText = "Total price";
+            this.cototal0.Name = "cototal0";
+            this.cototal0.ReadOnly = true;
             // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cointerface);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(826, 558);
+            this.Size = new System.Drawing.Size(964, 558);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.cointerface.ResumeLayout(false);
             this.cointerface.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -352,16 +356,17 @@
         private System.Windows.Forms.TextBox coIDtb;
         private System.Windows.Forms.TextBox conametb;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cobrand0;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coname0;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coprice0;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coID0;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label coexpirydatelabel;
         private System.Windows.Forms.TextBox coCVVtb;
         private System.Windows.Forms.TextBox coexpirydatetb;
         private System.Windows.Forms.TextBox cocardnumbertb;
         private System.Windows.Forms.Label cocardnumberlabel;
         private System.Windows.Forms.Label coCVVlabel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrand0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coname0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coprice0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coID0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coquantity0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cototal0;
     }
 }

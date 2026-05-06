@@ -43,6 +43,7 @@
             // 
             this.codonutdisturblab.AutoSize = true;
             this.codonutdisturblab.Font = new System.Drawing.Font("MV Boli", 51F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codonutdisturblab.ForeColor = System.Drawing.Color.HotPink;
             this.codonutdisturblab.Location = new System.Drawing.Point(88, 45);
             this.codonutdisturblab.Name = "codonutdisturblab";
             this.codonutdisturblab.Size = new System.Drawing.Size(504, 90);
@@ -53,11 +54,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(158, 214);
+            this.label2.ForeColor = System.Drawing.Color.HotPink;
+            this.label2.Location = new System.Drawing.Point(135, 213);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(368, 21);
+            this.label2.Size = new System.Drawing.Size(403, 21);
             this.label2.TabIndex = 3;
-            this.label2.Text = "High quality donuts for the whole family!";
+            this.label2.Text = "High quality donuts for you and your friends!";
             // 
             // menuUS
             // 

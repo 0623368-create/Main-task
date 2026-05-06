@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.coitemsbtn = new System.Windows.Forms.Button();
             this.comenu = new System.Windows.Forms.Button();
             this.coaboutus = new System.Windows.Forms.Button();
             this.cocheckout = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.panel1.Controls.Add(this.coitemsbtn);
             this.panel1.Controls.Add(this.comenu);
             this.panel1.Controls.Add(this.coaboutus);
             this.panel1.Controls.Add(this.cocheckout);
@@ -49,6 +51,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(169, 452);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // coitemsbtn
+            // 
+            this.coitemsbtn.Location = new System.Drawing.Point(38, 165);
+            this.coitemsbtn.Name = "coitemsbtn";
+            this.coitemsbtn.Size = new System.Drawing.Size(75, 23);
+            this.coitemsbtn.TabIndex = 3;
+            this.coitemsbtn.Text = "items";
+            this.coitemsbtn.UseVisualStyleBackColor = true;
+            this.coitemsbtn.Click += new System.EventHandler(this.coitemsbtn_Click_1);
             // 
             // comenu
             // 
@@ -62,7 +75,7 @@
             // 
             // coaboutus
             // 
-            this.coaboutus.Location = new System.Drawing.Point(38, 110);
+            this.coaboutus.Location = new System.Drawing.Point(38, 106);
             this.coaboutus.Name = "coaboutus";
             this.coaboutus.Size = new System.Drawing.Size(75, 23);
             this.coaboutus.TabIndex = 1;
@@ -72,7 +85,7 @@
             // 
             // cocheckout
             // 
-            this.cocheckout.Location = new System.Drawing.Point(38, 178);
+            this.cocheckout.Location = new System.Drawing.Point(38, 223);
             this.cocheckout.Name = "cocheckout";
             this.cocheckout.Size = new System.Drawing.Size(75, 23);
             this.cocheckout.TabIndex = 2;
@@ -122,6 +135,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel pnlContent;
         private aboutus aboutus1;
+        private System.Windows.Forms.Button coitemsbtn;
     }
 }
 

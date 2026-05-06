@@ -70,6 +70,12 @@
     <Compile Include="checkoutomori.Designer.cs">
       <DependentUpon>checkoutomori.cs</DependentUpon>
     </Compile>
+    <Compile Include="items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="items.Designer.cs">
+      <DependentUpon>items.cs</DependentUpon>
+    </Compile>
     <Compile Include="menuUS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="items.resx">
+      <DependentUpon>items.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuUS.resx">
       <DependentUpon>menuUS.cs</DependentUpon>

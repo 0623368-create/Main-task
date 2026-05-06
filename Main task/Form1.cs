@@ -61,6 +61,16 @@ namespace Main_task
             ShowScreen(new aboutususercontrol());
         }
 
+        private void coitemsbtn_Click_1(object sender, EventArgs e)
+        {
+            ShowScreen(new items());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         //the the umm hte uhh user checkuout thing appears
 
 
