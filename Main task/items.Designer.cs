@@ -48,7 +48,7 @@
             this.coquantity1});
             this.dataGridView1.Location = new System.Drawing.Point(150, 18);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 434);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 434);
             this.dataGridView1.TabIndex = 0;
             // 
             // cobrand1

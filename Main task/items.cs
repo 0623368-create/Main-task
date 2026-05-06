@@ -19,7 +19,22 @@ namespace Main_task
 
         private void items_Load(object sender, EventArgs e)
         {
+            var tempData = InventoryService.LoadFromCSV(filePath);
 
+            _inventoryList.Clear();
+            foreach (var item in tempData)
+            {
+                _inventoryList.Add(item);
+            }
+
+            dataGridView1.DataSource = _inventoryList;
         }
+
+        private BindingList<Product> _inventoryList = new BindingList<Product>();
+        private BindingSource _bindingSource = new BindingSource();
+
+        string filePath = "H:/Programming/Main task/Main task/inventory.csv";
+
     }
+
 }
