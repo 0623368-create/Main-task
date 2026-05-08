@@ -50,12 +50,12 @@ namespace Main_task
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 // Match header exactly
-                writer.WriteLine("ProductID,ProductName,ProductBrand,Price,Quantity");
+                writer.WriteLine("Brand,Name,Price,ID,Quantity");
 
                 foreach (var p in products)
                 {
                     // Converts price back to cents for storage and includes quantity
-                    string line = $"{p.proID},{p.proname},{p.probrand},{p.proprice * 100},{p.proquantity}";
+                    string line = $"{p.Brand},{p.Name},{p.Price* 100},{p.ID},{p.Quantity}";
                     writer.WriteLine(line);
                 }
             }

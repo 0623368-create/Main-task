@@ -62,7 +62,7 @@
             this.Controls.Add(this.coaboutusyap);
             this.Controls.Add(this.coaboutustitle);
             this.Name = "aboutususercontrol";
-            this.Size = new System.Drawing.Size(787, 380);
+            this.Size = new System.Drawing.Size(810, 380);
             this.ResumeLayout(false);
             this.PerformLayout();
 

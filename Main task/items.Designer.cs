@@ -29,52 +29,60 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cobrand1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coname1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coprice1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coquantity1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cobrand1,
-            this.coname1,
-            this.coprice1,
-            this.coID1,
-            this.coquantity1});
+            this.Brand,
+            this.Name,
+            this.Price,
+            this.ID,
+            this.Quantity});
             this.dataGridView1.Location = new System.Drawing.Point(150, 18);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(542, 434);
             this.dataGridView1.TabIndex = 0;
             // 
-            // cobrand1
+            // Brand
             // 
-            this.cobrand1.HeaderText = "Brand";
-            this.cobrand1.Name = "cobrand1";
+            this.Brand.HeaderText = "Brand";
+            this.Brand.Name = "Brand";
+            this.Brand.ReadOnly = true;
             // 
-            // coname1
+            // Name
             // 
-            this.coname1.HeaderText = "Name";
-            this.coname1.Name = "coname1";
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
             // 
-            // coprice1
+            // Price
             // 
-            this.coprice1.HeaderText = "Price";
-            this.coprice1.Name = "coprice1";
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
             // 
-            // coID1
+            // ID
             // 
-            this.coID1.HeaderText = "ID";
-            this.coID1.Name = "coID1";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
-            // coquantity1
+            // Quantity
             // 
-            this.coquantity1.HeaderText = "Quantity";
-            this.coquantity1.Name = "coquantity1";
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
             // 
             // items
             // 
@@ -92,10 +100,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cobrand1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coname1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coprice1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coID1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coquantity1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Brand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
     }
 }

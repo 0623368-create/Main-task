@@ -12,6 +12,11 @@ namespace Main_task
 {
     public partial class items : UserControl
     {
+        private BindingList<Product> _inventoryList = new BindingList<Product>();
+        private BindingSource _bindingSource = new BindingSource();
+
+        string filePath = "H:/Programming/Main task/Main task/Book.csv";
+
         public items()
         {
             InitializeComponent();
@@ -19,6 +24,7 @@ namespace Main_task
 
         private void items_Load(object sender, EventArgs e)
         {
+
             var tempData = InventoryService.LoadFromCSV(filePath);
 
             _inventoryList.Clear();
@@ -29,11 +35,8 @@ namespace Main_task
 
             dataGridView1.DataSource = _inventoryList;
         }
-
-        private BindingList<Product> _inventoryList = new BindingList<Product>();
-        private BindingSource _bindingSource = new BindingSource();
-
-        string filePath = "H:/Programming/Main task/Main task/inventory.csv";
+        
+        
 
     }
 
