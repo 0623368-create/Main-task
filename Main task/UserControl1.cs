@@ -11,7 +11,10 @@ using System.Windows.Forms;
 namespace Main_task
 {
     public partial class UserControl1 : UserControl
-    {
+    { 
+        private BindingList<Product> _inventoryList = new BindingList<Product>();
+        private BindingSource _bindingSource = new BindingSource();
+        string filePath = "./Book.csv";
         public UserControl1()
         {
             InitializeComponent();
@@ -19,17 +22,17 @@ namespace Main_task
 
         public class product
         {
-            public string proname;
-            public string probrand;
-            public decimal proprice;
-            public int proID;
+            public string Name;
+            public string Brand;
+            public decimal Price;
+            public int ID;
 
-            public product(int proID, string proname, string probrand, decimal proprice)
+            public product(int ID, string Name, string Brand, decimal Price)
             {
-                this.proID = proID;
-                this.proname = proname;
-                this.probrand = probrand;
-                this.proprice = proprice;
+                this.ID = ID;
+                this.Name = Name;
+                this.Brand = Brand;
+                this.Price = Price;
             }
         }
 
@@ -37,6 +40,16 @@ namespace Main_task
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
+            var tempData = InventoryService.LoadFromCSV(filePath);
+            _inventoryList.Clear();
+
+            foreach (var item in tempData)
+            {
+                _inventoryList.Add(item);
+            }
+
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = _inventoryList;
 
         }
 
@@ -51,25 +64,19 @@ namespace Main_task
 
         private void coaddproducts_Click(object sender, EventArgs e)
         {
+            
+            int.TryParse(coIDtb.Text, out int ID);
 
-            int.TryParse(cobrandtb.Text, out int proID);
+         
 
-        //    if false
-          //      {
+            string Name = conametb.Text;
+            string Brand = cobrandtb.Text;
+            decimal.TryParse(copricetb.Text, out decimal Price);
 
-       //         }
-
-            string proname = conametb.Text;
-            string probrand = cobrandtb.Text;
-            decimal.TryParse(copricetb.Text, out decimal proprice);
-
-        //    if false
-      //          {
-
-       //         }
+           
 
 
-            product newProduct = new product(proID, proname, probrand, proprice);
+            product newProduct = new product(ID, Name, Brand, Price);
           //  dataGridView1.Add(newProduct);
 
 

@@ -277,10 +277,10 @@
             this.coID0,
             this.coquantity0,
             this.cototal0});
-            this.dataGridView1.Location = new System.Drawing.Point(301, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(282, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(629, 417);
+            this.dataGridView1.Size = new System.Drawing.Size(648, 417);
             this.dataGridView1.TabIndex = 3;
             // 
             // cobrand0
@@ -326,7 +326,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cointerface);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(964, 558);
+            this.Size = new System.Drawing.Size(1057, 558);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.cointerface.ResumeLayout(false);
             this.cointerface.PerformLayout();

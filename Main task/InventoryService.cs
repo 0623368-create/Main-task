@@ -26,15 +26,16 @@ namespace Main_task
                 {
                     try
                     {
-                        int id = int.Parse(parts[3]);
-                        string name = parts[1];
-                        string brand = parts[0];
-                        decimal price = decimal.Parse(parts[2]) / 100m;
+                        string Brand = parts[0];
+                      
+                        string Name = parts[1];
 
+                        decimal Price = decimal.Parse(parts[2]); // / 100m;
+                        int ID = int.Parse(parts[3]);
                         // default quantity is 0
-                        int quantity = 0;
+                        int Quantity = 0;
 
-                        products.Add(new Product(id, name, brand, price, quantity));
+                        products.Add(new Product(ID, Name, Brand, Price, Quantity));
                     }
                     catch
                     {
@@ -55,7 +56,7 @@ namespace Main_task
                 foreach (var p in products)
                 {
                     // Converts price back to cents for storage and includes quantity
-                    string line = $"{p.Brand},{p.Name},{p.Price* 100},{p.ID},{p.Quantity}";
+                    string line = $"{p.PBrand},{p.PName},{p.PPrice* 100},{p.PID},{p.PQuantity}";
                     writer.WriteLine(line);
                 }
             }

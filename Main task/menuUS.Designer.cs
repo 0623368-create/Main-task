@@ -49,6 +49,7 @@
             this.codonutdisturblab.Size = new System.Drawing.Size(504, 90);
             this.codonutdisturblab.TabIndex = 1;
             this.codonutdisturblab.Text = "Donut Disturb";
+            this.codonutdisturblab.Click += new System.EventHandler(this.codonutdisturblab_Click);
             // 
             // label2
             // 
@@ -68,7 +69,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.codonutdisturblab);
             this.Name = "menuUS";
-            this.Size = new System.Drawing.Size(689, 543);
+            this.Size = new System.Drawing.Size(791, 543);
             this.ResumeLayout(false);
             this.PerformLayout();
 

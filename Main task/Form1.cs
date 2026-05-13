@@ -63,7 +63,8 @@ namespace Main_task
 
         private void coitemsbtn_Click_1(object sender, EventArgs e)
         {
-            ShowScreen(new items());
+            ShowScreen(new UserControl_inventory());
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

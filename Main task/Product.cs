@@ -8,19 +8,19 @@ namespace Main_task
 {
     internal class Product
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Brand { get; set; }
-        public decimal Price { get; set; }
-        public int Quantity { get; set; }
+        public int PID { get; set; }
+        public string PName { get; set; }
+        public string PBrand { get; set; }
+        public decimal PPrice { get; set; }
+        public int PQuantity { get; set; }
 
         public Product(int id, string name, string brand, decimal price, int quantity)
         {
-            ID = id;
-            Name = name;
-            Brand = brand;
-            Price = price;
-            Quantity = quantity;
+            PID = id;
+            PName = name;
+            PBrand = brand;
+            PPrice = price;
+            PQuantity = quantity;
         }
 
     }

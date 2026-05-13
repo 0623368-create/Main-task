@@ -71,12 +71,6 @@
       <DependentUpon>checkoutomori.cs</DependentUpon>
     </Compile>
     <Compile Include="InventoryService.cs" />
-    <Compile Include="items.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="items.Designer.cs">
-      <DependentUpon>items.cs</DependentUpon>
-    </Compile>
     <Compile Include="menuUS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +92,12 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_inventory.Designer.cs">
+      <DependentUpon>UserControl_inventory.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aboutus.resx">
       <DependentUpon>aboutus.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="items.resx">
-      <DependentUpon>items.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuUS.resx">
       <DependentUpon>menuUS.cs</DependentUpon>
@@ -131,8 +128,12 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Book.csv" />
-    <None Include="inventory.csv" />
+    <EmbeddedResource Include="UserControl_inventory.resx">
+      <DependentUpon>UserControl_inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Book.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
