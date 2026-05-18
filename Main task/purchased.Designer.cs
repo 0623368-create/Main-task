@@ -1,0 +1,73 @@
+﻿namespace Main_task
+{
+    partial class purchased
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.cothanksbye = new System.Windows.Forms.Label();
+            this.cogobackmenubtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // cothanksbye
+            // 
+            this.cothanksbye.AutoSize = true;
+            this.cothanksbye.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.cothanksbye.ForeColor = System.Drawing.Color.HotPink;
+            this.cothanksbye.Location = new System.Drawing.Point(113, 165);
+            this.cothanksbye.Name = "cothanksbye";
+            this.cothanksbye.Size = new System.Drawing.Size(598, 47);
+            this.cothanksbye.TabIndex = 0;
+            this.cothanksbye.Text = "Your order has been completed\r\n";
+            // 
+            // cogobackmenubtn
+            // 
+            this.cogobackmenubtn.Location = new System.Drawing.Point(359, 256);
+            this.cogobackmenubtn.Name = "cogobackmenubtn";
+            this.cogobackmenubtn.Size = new System.Drawing.Size(75, 23);
+            this.cogobackmenubtn.TabIndex = 1;
+            this.cogobackmenubtn.Text = "Go back";
+            this.cogobackmenubtn.UseVisualStyleBackColor = true;
+            // 
+            // purchased
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cogobackmenubtn);
+            this.Controls.Add(this.cothanksbye);
+            this.Name = "purchased";
+            this.Size = new System.Drawing.Size(784, 473);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label cothanksbye;
+        private System.Windows.Forms.Button cogobackmenubtn;
+    }
+}

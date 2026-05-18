@@ -62,26 +62,31 @@ namespace Main_task
             
         }
 
+    
+
         private void coaddproducts_Click(object sender, EventArgs e)
         {
             
-            int.TryParse(coIDtb.Text, out int ID);
-
-         
-
-            string Name = conametb.Text;
-            string Brand = cobrandtb.Text;
-            decimal.TryParse(copricetb.Text, out decimal Price);
-
-           
 
 
-            product newProduct = new product(ID, Name, Brand, Price);
-          //  dataGridView1.Add(newProduct);
+            int.TryParse(coIDtb.Text, out int id);
+            string name = conametb.Text;
+            string brand = cobrandtb.Text;
+            decimal.TryParse(copricetb.Text, out decimal price);
+            int.TryParse(coquantitytb.Text, out int quantity);
+
+            Product newProduct = new Product(id, name, brand, price, quantity);
+
+            _inventoryList.Add(newProduct);
+            dataGridView1.DataSource = _inventoryList;
+
 
 
         }
 
+        private void cocheckout_Click_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }

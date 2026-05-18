@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cointerface = new System.Windows.Forms.GroupBox();
+            this.coquantity = new System.Windows.Forms.Label();
+            this.coquantitytb = new System.Windows.Forms.TextBox();
             this.cocardnumberlabel = new System.Windows.Forms.Label();
             this.coCVVlabel = new System.Windows.Forms.Label();
             this.coexpirydatelabel = new System.Windows.Forms.Label();
@@ -42,7 +44,6 @@
             this.coID = new System.Windows.Forms.Label();
             this.coname = new System.Windows.Forms.Label();
             this.coprice = new System.Windows.Forms.Label();
-            this.cocheckout = new System.Windows.Forms.Button();
             this.copricetb = new System.Windows.Forms.TextBox();
             this.coeditproducts = new System.Windows.Forms.Button();
             this.codeleteproductstb = new System.Windows.Forms.TextBox();
@@ -59,7 +60,6 @@
             this.coprice0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coID0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coquantity0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cototal0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cointerface.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +67,8 @@
             // cointerface
             // 
             this.cointerface.BackColor = System.Drawing.Color.HotPink;
+            this.cointerface.Controls.Add(this.coquantity);
+            this.cointerface.Controls.Add(this.coquantitytb);
             this.cointerface.Controls.Add(this.cocardnumberlabel);
             this.cointerface.Controls.Add(this.coCVVlabel);
             this.cointerface.Controls.Add(this.coexpirydatelabel);
@@ -79,7 +81,6 @@
             this.cointerface.Controls.Add(this.coID);
             this.cointerface.Controls.Add(this.coname);
             this.cointerface.Controls.Add(this.coprice);
-            this.cointerface.Controls.Add(this.cocheckout);
             this.cointerface.Controls.Add(this.copricetb);
             this.cointerface.Controls.Add(this.coeditproducts);
             this.cointerface.Controls.Add(this.codeleteproductstb);
@@ -93,6 +94,23 @@
             this.cointerface.TabStop = false;
             this.cointerface.Text = "interface";
             this.cointerface.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // coquantity
+            // 
+            this.coquantity.AutoSize = true;
+            this.coquantity.Location = new System.Drawing.Point(6, 225);
+            this.coquantity.Name = "coquantity";
+            this.coquantity.Size = new System.Drawing.Size(44, 13);
+            this.coquantity.TabIndex = 19;
+            this.coquantity.Text = "quantity";
+            // 
+            // coquantitytb
+            // 
+            this.coquantitytb.Location = new System.Drawing.Point(65, 222);
+            this.coquantitytb.Name = "coquantitytb";
+            this.coquantitytb.Size = new System.Drawing.Size(61, 20);
+            this.coquantitytb.TabIndex = 18;
+            this.coquantitytb.Text = "1";
             // 
             // cocardnumberlabel
             // 
@@ -115,7 +133,7 @@
             // coexpirydatelabel
             // 
             this.coexpirydatelabel.AutoSize = true;
-            this.coexpirydatelabel.Location = new System.Drawing.Point(152, 335);
+            this.coexpirydatelabel.Location = new System.Drawing.Point(71, 338);
             this.coexpirydatelabel.Name = "coexpirydatelabel";
             this.coexpirydatelabel.Size = new System.Drawing.Size(82, 13);
             this.coexpirydatelabel.TabIndex = 15;
@@ -130,7 +148,7 @@
             // 
             // coexpirydatetb
             // 
-            this.coexpirydatetb.Location = new System.Drawing.Point(90, 335);
+            this.coexpirydatetb.Location = new System.Drawing.Point(9, 335);
             this.coexpirydatetb.Name = "coexpirydatetb";
             this.coexpirydatetb.Size = new System.Drawing.Size(56, 20);
             this.coexpirydatetb.TabIndex = 13;
@@ -189,15 +207,6 @@
             this.coprice.Size = new System.Drawing.Size(30, 13);
             this.coprice.TabIndex = 6;
             this.coprice.Text = "price";
-            // 
-            // cocheckout
-            // 
-            this.cocheckout.Location = new System.Drawing.Point(9, 331);
-            this.cocheckout.Name = "cocheckout";
-            this.cocheckout.Size = new System.Drawing.Size(75, 27);
-            this.cocheckout.TabIndex = 2;
-            this.cocheckout.Text = "pay";
-            this.cocheckout.UseVisualStyleBackColor = true;
             // 
             // copricetb
             // 
@@ -275,12 +284,11 @@
             this.coname0,
             this.coprice0,
             this.coID0,
-            this.coquantity0,
-            this.cototal0});
+            this.coquantity0});
             this.dataGridView1.Location = new System.Drawing.Point(282, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(648, 417);
+            this.dataGridView1.Size = new System.Drawing.Size(696, 417);
             this.dataGridView1.TabIndex = 3;
             // 
             // cobrand0
@@ -313,12 +321,6 @@
             this.coquantity0.Name = "coquantity0";
             this.coquantity0.ReadOnly = true;
             // 
-            // cototal0
-            // 
-            this.cototal0.HeaderText = "Total price";
-            this.cototal0.Name = "cototal0";
-            this.cototal0.ReadOnly = true;
-            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,7 +342,6 @@
         private System.Windows.Forms.GroupBox cointerface;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button codeleteproducts;
-        private System.Windows.Forms.Button cocheckout;
         private System.Windows.Forms.Button coeditproducts;
         private System.Windows.Forms.Button coaddproducts;
         private System.Windows.Forms.TextBox copricetb;
@@ -362,11 +363,12 @@
         private System.Windows.Forms.TextBox cocardnumbertb;
         private System.Windows.Forms.Label cocardnumberlabel;
         private System.Windows.Forms.Label coCVVlabel;
+        private System.Windows.Forms.TextBox coquantitytb;
+        private System.Windows.Forms.Label coquantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn cobrand0;
         private System.Windows.Forms.DataGridViewTextBoxColumn coname0;
         private System.Windows.Forms.DataGridViewTextBoxColumn coprice0;
         private System.Windows.Forms.DataGridViewTextBoxColumn coID0;
         private System.Windows.Forms.DataGridViewTextBoxColumn coquantity0;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cototal0;
     }
 }

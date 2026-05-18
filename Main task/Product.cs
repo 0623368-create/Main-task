@@ -16,6 +16,11 @@ namespace Main_task
 
         public Product(int id, string name, string brand, decimal price, int quantity)
         {
+            id = PID;
+            name = PName;
+            brand = PBrand;
+            price = PPrice;
+            quantity = PQuantity;
             PID = id;
             PName = name;
             PBrand = brand;

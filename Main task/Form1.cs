@@ -14,7 +14,7 @@ namespace Main_task
     {
         public Form1()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void comenu_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace Main_task
         {
 
         }
-        
+
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -72,11 +72,39 @@ namespace Main_task
 
         }
 
-        //the the umm hte uhh user checkuout thing appears
+        private void cogobackmenubtn_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new menuUS());
+        }
+        private void cocheckout1_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new purchased());
 
 
 
 
+        }
 
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+              // if ( )
+             //   {
+                //    try
+                 //   {
+                    purchasing f2 = new purchasing();
+                    f2.Owner = this;
+                    f2.StartPosition = FormStartPosition.Manual;
+                    f2.Location = this.Location;
+                    f2.Show();
+                    this.Hide();
+           //     }
+             //       catch
+             //       {
+             //           // Skips rows with formatting errors
+              //      }
+              //  }
+            
+        }
     }
-    }
+}
+    

@@ -36,6 +36,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.aboutus1 = new Main_task.aboutus();
+            this.btnPay = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlContent.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.panel1.Controls.Add(this.btnPay);
             this.panel1.Controls.Add(this.coitemsbtn);
             this.panel1.Controls.Add(this.comenu);
             this.panel1.Controls.Add(this.coaboutus);
@@ -109,6 +111,16 @@
             this.aboutus1.Size = new System.Drawing.Size(858, 612);
             this.aboutus1.TabIndex = 0;
             // 
+            // btnPay
+            // 
+            this.btnPay.Location = new System.Drawing.Point(38, 286);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(75, 23);
+            this.btnPay.TabIndex = 4;
+            this.btnPay.Text = "Pay";
+            this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +148,7 @@
         private System.Windows.Forms.Panel pnlContent;
         private aboutus aboutus1;
         private System.Windows.Forms.Button coitemsbtn;
+        private System.Windows.Forms.Button btnPay;
     }
 }
 
